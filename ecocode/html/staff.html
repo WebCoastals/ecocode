@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Staff</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .staff-member {
+            float: left;
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .staff-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .staff-member {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .staff-member {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="staff-member">
+            <img src="staff1.jpg" alt="Staff 1">
+            <h3>John Doe</h3>
+            <p>CEO</p>
+        </div>
+        <div class="staff-member">
+            <img src="staff2.jpg" alt="Staff 2">
+            <h3>Jane Smith</h3>
+            <p>CTO</p>
+        </div>
+        <div class="staff-member">
+            <img src="staff3.jpg" alt="Staff 3">
+            <h3>Mike Johnson</h3>
+            <p>COO</p>
+        </div>
+        <div class="staff-member">
+            <img src="staff4.jpg" alt="Staff 4">
+            <h3>Lisa Brown</h3>
+            <p>CFO</p>
+        </div>
+    </div>
+</body>
+</html>

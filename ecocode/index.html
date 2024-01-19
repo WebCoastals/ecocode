@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css" />
+    <title>ECoCoDE Nepal</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">ECoCoDE Nepal</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#x2630;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="staff.html">Our Staff</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="hero-section swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="images/slider_image_1.jpg" alt="" class="image">
+                <div class="image_description">
+                    <span class="text">A Multidiscliplinary Engineering Consulting and Services</span>
+                    <h2>
+                        Architects<br/>
+                        Engineers<br/>
+                        Planners<br/>
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/slider_image_2.jpg" alt="" class="image">
+                <div class="image_description">
+                    <span class="text">A Multidiscliplinary Engineering Consulting and Services</span>
+                    <h2>
+                        Architects<br/>
+                        Engineers<br/>
+                        Planners<br/>
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+  </script>
+</body>
+</html>
